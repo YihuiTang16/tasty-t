@@ -35,7 +35,7 @@ export function Results({
         <div className="rounded-[28px] border border-dashed border-line bg-card/70 px-5 py-10 text-center">
           <h2 className="font-display text-3xl">Your places will land here.</h2>
           <p className="mx-auto mt-2 max-w-xl text-muted">
-            Choose a campus station and a craving, or use Try a Sample Trip. The list and map stay in the page, using the saved dataset.
+            Choose a quick plan or set your campus, budget, and outing preferences. Your ranked places and map will appear here.
           </p>
         </div>
       ) : error ? (
@@ -65,10 +65,11 @@ export function Results({
           </div>
 
           <p className="mb-4 max-w-3xl text-sm leading-6 text-muted">
+            Scores show how well each place fits your selections; they are not reviews or star ratings.{" "}
             {knownBudget === 0
-              ? "None of these places publish a price in OpenStreetMap, so budget was left out of the score instead of guessed."
-              : `${knownBudget} of ${results.length} places have a listed fee or charge. The others were ranked without a budget score.`}{" "}
-            Transit buttons open Google Maps. This app does not calculate ride times.
+              ? "No prices or fees are listed for these places in OpenStreetMap, so budget was left out of the score instead of guessed."
+              : `${knownBudget} of ${results.length} places have a listed price or fee. For the others, budget was left out of the score instead of guessed.`}{" "}
+            Transit directions open Google Maps. Tasty T ranks by straight-line proximity and does not predict MBTA ride times.
           </p>
 
           <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.92fr)]">
