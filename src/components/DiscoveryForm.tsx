@@ -78,9 +78,6 @@ export function DiscoveryForm({
               onClick={() => onPreset(preset.trip)}
               className="min-h-24 rounded-2xl border border-line bg-paper px-3 py-3 text-left transition hover:border-accent hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-harbor"
             >
-              {preset.trip.lateNightOnly ? (
-                <img src={`${import.meta.env.BASE_URL}late-night.svg`} alt="" className="mb-2 h-16 w-full rounded-xl object-cover" />
-              ) : null}
               <span className="block text-sm font-semibold">{preset.title}</span>
               <span className="mt-1 block text-xs leading-5 text-muted">{describeTrip(preset.trip, preset.campus)}</span>
               {preset.trip.lateNightOnly ? <span className="mt-1 block text-xs text-muted">Only listings verified as open 24/7</span> : null}
