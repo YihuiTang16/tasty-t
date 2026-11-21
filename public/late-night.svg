@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 260" role="img" aria-labelledby="title">
+  <title id="title">Boston skyline at night with the T</title>
+  <defs>
+    <linearGradient id="sky" x2="0" y2="1">
+      <stop stop-color="#132a46"/><stop offset="1" stop-color="#3b5672"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="260" rx="24" fill="url(#sky)"/>
+  <circle cx="600" cy="54" r="24" fill="#f7cc79"/>
+  <path d="M0 187h70v-72h43v72h37V93h52v94h42v-52h49v52h39V78h48v109h47v-62h48v62h55v73H0z" fill="#1b2432"/>
+  <g fill="#f7cc79" opacity=".9">
+    <path d="M83 130h8v10h-8zm18 0h8v10h-8zm117-23h9v11h-9zm18 0h9v11h-9zm139-11h9v12h-9zm19 0h9v12h-9zm100 48h8v10h-8zm18 0h8v10h-8z"/>
+  </g>
+  <path d="M0 211h720" stroke="#e4a957" stroke-width="5"/>
+  <path d="M25 234h675" stroke="#f4d69f" stroke-width="4" stroke-dasharray="13 14"/>
+  <g transform="translate(298 152)">
+    <rect width="126" height="57" rx="17" fill="#f4efe4"/>
+    <rect x="12" y="9" width="102" height="34" rx="11" fill="#d74a35"/>
+    <circle cx="63" cy="26" r="13" fill="#fff"/>
+    <text x="63" y="32" font-family="Arial,sans-serif" font-size="17" font-weight="700" fill="#d74a35" text-anchor="middle">T</text>
+    <circle cx="27" cy="56" r="7" fill="#171d27"/><circle cx="99" cy="56" r="7" fill="#171d27"/>
+  </g>
+</svg>
