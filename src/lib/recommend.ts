@@ -320,7 +320,8 @@ export function recommend(
   if (stations.length === 0) throw new Error("No MBTA stations are loaded.");
 
   const blend = transitBlend(prefs.time);
-  const scored: Recommendation[] = places.map((place) => {
+  const candidates = prefs.lateNightOnly ? places.filter((place) => place.lateNightVerified) : places;
+  const scored: Recommendation[] = candidates.map((place) => {
     const cuisine = cuisineMatch(place, prefs.cuisine);
     const picked = pickStation(place, stations, prefs.stepFree);
     const originMiles = haversineMiles(place.lat, place.lon, origin.lat, origin.lon);
