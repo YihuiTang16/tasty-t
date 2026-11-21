@@ -2,11 +2,11 @@
 
 Record or present against the running site. Do not refresh the data five minutes before you go on stage. The sample trip is saved in the app.
 
-**On screen at the start:** the Tasty T homepage, quick plan cards visible, no results yet.
+**On screen at the start:** the SUBwayTREK homepage, quick plan cards visible, no results yet.
 
 ## 0:00–0:08 — The problem
 
-"Students without cars do not need another list of restaurants. They need places they can reach from the T stop they already use. Tasty T starts at a campus station."
+"Students without cars do not need another list of restaurants. They need places they can reach from the T stop they already use. SUBwayTREK starts at a campus station."
 
 Gesture at the five starting points and the line colors.
 
