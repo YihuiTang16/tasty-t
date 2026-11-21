@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Brand } from "./components/Brand.tsx";
 import { DiscoveryForm } from "./components/DiscoveryForm.tsx";
 import { Footer } from "./components/Footer.tsx";
 import { LineDots } from "./components/LineDots.tsx";
@@ -127,8 +128,7 @@ export default function App() {
       <header className="sticky top-0 z-40 border-b border-line/80 bg-paper/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <a href="#top" className="flex items-center gap-2 text-ink">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-ink text-sm font-semibold text-paper">Tt</span>
-            <span className="font-display text-2xl leading-none">Tasty T</span>
+            <Brand />
           </a>
           <div className="flex items-center gap-2">
             <a href="#how" className="hidden text-sm font-medium text-muted sm:inline">
@@ -152,7 +152,7 @@ export default function App() {
               Find your next bite. Take the T there.
             </h1>
             <p className="mt-4 max-w-xl text-lg leading-7 text-muted">
-              Choose your campus, budget, and kind of outing. Tasty T ranks Boston food and local spots around your preferences, then shows nearby MBTA stations and transit directions.
+              Choose your campus, budget, and kind of outing. SUBwayTREK ranks Boston food and local spots around your preferences, then shows nearby MBTA stations and transit directions.
             </p>
             <dl className="mt-6 grid grid-cols-3 gap-3 max-w-lg">
               <div className="rounded-2xl bg-card px-3 py-3">
