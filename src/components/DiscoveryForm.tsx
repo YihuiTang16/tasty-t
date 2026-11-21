@@ -1,5 +1,5 @@
 import { RadioGroup } from "./RadioGroup.tsx";
-import { describeTrip, SAMPLE_TRIP, STUDY_TRIP, WEEKEND_TRIP } from "../lib/presets.ts";
+import { describeTrip, LATE_NIGHT_TRIP, SAMPLE_TRIP, STUDY_TRIP, WEEKEND_TRIP } from "../lib/presets.ts";
 import { BUDGET_OPTIONS, CUISINE_OPTIONS, EXPERIENCE_OPTIONS, TIME_OPTIONS } from "../lib/options.ts";
 import type { BudgetTier, Campus, CuisineChoice, ExperienceChoice, Station, TimeChoice, TripDraft, TripPreferences } from "../types.ts";
 
@@ -65,11 +65,12 @@ export function DiscoveryForm({
       <div className="mb-6">
         <p className="text-xs font-semibold tracking-[0.16em] text-accent-dark uppercase">Quick plans</p>
         <p className="mt-1 text-sm text-muted">Pick a starting point, then customize every detail below if you like.</p>
-        <div className="mt-3 grid gap-2 sm:grid-cols-3">
+        <div className="mt-3 grid gap-2 sm:grid-cols-2">
           {[
             { title: "BU food date", trip: SAMPLE_TRIP, campus: "Boston University" },
             { title: "Study cafe", trip: STUDY_TRIP, campus: "Northeastern University" },
             { title: "Free weekend outing", trip: WEEKEND_TRIP, campus: "Harvard University" },
+            { title: "Late-night bites", trip: LATE_NIGHT_TRIP, campus: "Boston University" },
           ].map((preset) => (
             <button
               key={preset.title}
@@ -77,8 +78,12 @@ export function DiscoveryForm({
               onClick={() => onPreset(preset.trip)}
               className="min-h-24 rounded-2xl border border-line bg-paper px-3 py-3 text-left transition hover:border-accent hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-harbor"
             >
+              {preset.trip.lateNightOnly ? (
+                <img src={`${import.meta.env.BASE_URL}late-night.svg`} alt="" className="mb-2 h-16 w-full rounded-xl object-cover" />
+              ) : null}
               <span className="block text-sm font-semibold">{preset.title}</span>
               <span className="mt-1 block text-xs leading-5 text-muted">{describeTrip(preset.trip, preset.campus)}</span>
+              {preset.trip.lateNightOnly ? <span className="mt-1 block text-xs text-muted">Only listings verified as open 24/7</span> : null}
               <span className="mt-2 block text-xs font-semibold text-accent-dark">Use this plan →</span>
             </button>
           ))}
