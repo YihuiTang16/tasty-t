@@ -49,8 +49,8 @@ export function RadioGroup<T extends string>({ name, label, hint, value, options
       onKeyDown={onKeyDown}
       className="min-w-0"
     >
-      <legend className="mb-2 font-medium text-ink">{label}</legend>
-      <div className="flex flex-wrap gap-2">
+      <legend className="mb-2 font-semibold text-[#294b60]">{label}</legend>
+      <div className="grid grid-cols-1 gap-2 sm:grid-cols-2 xl:grid-cols-4">
         {options.map((option) => {
           const selected = option.value === value;
           return (
@@ -61,19 +61,31 @@ export function RadioGroup<T extends string>({ name, label, hint, value, options
               data-value={option.value}
               aria-checked={selected}
               onClick={() => onChange(option.value)}
-              className={`min-h-11 max-w-full rounded-2xl border px-3 py-2 text-left transition ${
+              className={`flex min-h-12 w-full items-start gap-3 rounded-lg border bg-white px-3 py-2.5 text-left transition ${
                 selected
-                  ? "border-ink bg-ink text-paper"
-                  : "border-line bg-card text-ink hover:border-ink/30"
+                  ? "border-[#07536b] ring-1 ring-[#07536b] text-ink"
+                  : "border-[#d7e1e6] text-ink hover:border-[#07536b]/60"
               }`}
             >
-              <span className="flex items-center gap-2">
-                {option.lines && option.lines.length > 0 ? <LineDots lines={option.lines} /> : null}
-                <span className="font-medium">{option.label}</span>
+              <span
+                aria-hidden="true"
+                className={`mt-0.5 grid h-5 w-5 shrink-0 place-items-center rounded-full ${
+                  selected ? "bg-[#07536b] text-white" : "bg-[#dce6e9] text-transparent"
+                }`}
+              >
+                <svg viewBox="0 0 16 16" className="h-3.5 w-3.5" fill="none">
+                  <path d="m3.5 8.2 3 3 6-6" stroke="currentColor" strokeWidth="2.4" strokeLinecap="round" strokeLinejoin="round" />
+                </svg>
               </span>
-              {option.description ? (
-                <span className={`mt-0.5 block text-xs ${selected ? "text-paper/75" : "text-muted"}`}>{option.description}</span>
-              ) : null}
+              <span className="min-w-0 flex-1">
+                <span className="flex items-center gap-2">
+                  {option.lines && option.lines.length > 0 ? <LineDots lines={option.lines} /> : null}
+                  <span className="font-medium">{option.label}</span>
+                </span>
+                {option.description ? (
+                  <span className="mt-0.5 block text-xs leading-4 text-muted">{option.description}</span>
+                ) : null}
+              </span>
             </button>
           );
         })}
