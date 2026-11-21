@@ -1,0 +1,3302 @@
+[
+  {
+    "id": "place-aport",
+    "name": "Airport",
+    "lat": 42.374262,
+    "lon": -71.030395,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-alfcl",
+    "name": "Alewife",
+    "lat": 42.39583,
+    "lon": -71.141287,
+    "municipality": "Cambridge",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-alsgr",
+    "name": "Allston Street",
+    "lat": 42.348701,
+    "lon": -71.137955,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-amory",
+    "name": "Amory Street",
+    "lat": 42.350992,
+    "lon": -71.114748,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-andrw",
+    "name": "Andrew",
+    "lat": 42.330154,
+    "lon": -71.057655,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-aqucl",
+    "name": "Aquarium",
+    "lat": 42.359784,
+    "lon": -71.051652,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-armnl",
+    "name": "Arlington",
+    "lat": 42.351902,
+    "lon": -71.070893,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-asmnl",
+    "name": "Ashmont",
+    "lat": 42.28452,
+    "lon": -71.063777,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      },
+      {
+        "id": "Mattapan",
+        "group": "Mattapan",
+        "branch": null,
+        "label": "Mattapan Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-astao",
+    "name": "Assembly",
+    "lat": 42.392811,
+    "lon": -71.077257,
+    "municipality": "Somerville",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-babck",
+    "name": "Babcock Street",
+    "lat": 42.351616,
+    "lon": -71.119924,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-bbsta",
+    "name": "Back Bay",
+    "lat": 42.34735,
+    "lon": -71.075727,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-bckhl",
+    "name": "Back of the Hill",
+    "lat": 42.330139,
+    "lon": -71.111313,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-balsq",
+    "name": "Ball Square",
+    "lat": 42.399889,
+    "lon": -71.111003,
+    "municipality": "Medford",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-bmmnl",
+    "name": "Beachmont",
+    "lat": 42.3975423,
+    "lon": -70.9923194,
+    "municipality": "Revere",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-bcnfd",
+    "name": "Beaconsfield",
+    "lat": 42.335765,
+    "lon": -71.140455,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-bland",
+    "name": "Blandford Street",
+    "lat": 42.349293,
+    "lon": -71.100258,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-lake",
+    "name": "Boston College",
+    "lat": 42.340081,
+    "lon": -71.166769,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-bucen",
+    "name": "Boston University Central",
+    "lat": 42.350082,
+    "lon": -71.106865,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-buest",
+    "name": "Boston University East",
+    "lat": 42.349735,
+    "lon": -71.103889,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-bomnl",
+    "name": "Bowdoin",
+    "lat": 42.361365,
+    "lon": -71.062037,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-boyls",
+    "name": "Boylston",
+    "lat": 42.35302,
+    "lon": -71.06459,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-brntn",
+    "name": "Braintree",
+    "lat": 42.2078543,
+    "lon": -71.0011385,
+    "municipality": "Braintree",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-bndhl",
+    "name": "Brandon Hall",
+    "lat": 42.340013,
+    "lon": -71.128701,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-brmnl",
+    "name": "Brigham Circle",
+    "lat": 42.334229,
+    "lon": -71.104609,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-brdwy",
+    "name": "Broadway",
+    "lat": 42.342622,
+    "lon": -71.056967,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-brkhl",
+    "name": "Brookline Hills",
+    "lat": 42.331316,
+    "lon": -71.126683,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-bvmnl",
+    "name": "Brookline Village",
+    "lat": 42.332608,
+    "lon": -71.116857,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-butlr",
+    "name": "Butler",
+    "lat": 42.272429,
+    "lon": -71.062519,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Mattapan",
+        "group": "Mattapan",
+        "branch": null,
+        "label": "Mattapan Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-capst",
+    "name": "Capen Street",
+    "lat": 42.267563,
+    "lon": -71.087338,
+    "municipality": "Milton",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Mattapan",
+        "group": "Mattapan",
+        "branch": null,
+        "label": "Mattapan Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-cedgr",
+    "name": "Cedar Grove",
+    "lat": 42.279629,
+    "lon": -71.060394,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Mattapan",
+        "group": "Mattapan",
+        "branch": null,
+        "label": "Mattapan Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-cntsq",
+    "name": "Central",
+    "lat": 42.365486,
+    "lon": -71.103802,
+    "municipality": "Cambridge",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-cenav",
+    "name": "Central Avenue",
+    "lat": 42.270027,
+    "lon": -71.073444,
+    "municipality": "Milton",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Mattapan",
+        "group": "Mattapan",
+        "branch": null,
+        "label": "Mattapan Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-chmnl",
+    "name": "Charles/MGH",
+    "lat": 42.361166,
+    "lon": -71.070628,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-chhil",
+    "name": "Chestnut Hill",
+    "lat": 42.326753,
+    "lon": -71.164699,
+    "municipality": "Newton",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-chill",
+    "name": "Chestnut Hill Avenue",
+    "lat": 42.338169,
+    "lon": -71.15316,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-chncl",
+    "name": "Chinatown",
+    "lat": 42.352547,
+    "lon": -71.062752,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-chswk",
+    "name": "Chiswick Road",
+    "lat": 42.340805,
+    "lon": -71.150711,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-clmnl",
+    "name": "Cleveland Circle",
+    "lat": 42.336142,
+    "lon": -71.149326,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-ccmnl",
+    "name": "Community College",
+    "lat": 42.373622,
+    "lon": -71.069533,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-cool",
+    "name": "Coolidge Corner",
+    "lat": 42.342116,
+    "lon": -71.121263,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-coecl",
+    "name": "Copley",
+    "lat": 42.349974,
+    "lon": -71.077447,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-davis",
+    "name": "Davis",
+    "lat": 42.39674,
+    "lon": -71.121815,
+    "municipality": "Somerville",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-denrd",
+    "name": "Dean Road",
+    "lat": 42.337656,
+    "lon": -71.142156,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-dwnxg",
+    "name": "Downtown Crossing",
+    "lat": 42.355518,
+    "lon": -71.060225,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      },
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-esomr",
+    "name": "East Somerville",
+    "lat": 42.379467,
+    "lon": -71.086625,
+    "municipality": "Somerville",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-eliot",
+    "name": "Eliot",
+    "lat": 42.319045,
+    "lon": -71.216684,
+    "municipality": "Newton",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-engav",
+    "name": "Englewood Avenue",
+    "lat": 42.337104,
+    "lon": -71.144852,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-fbkst",
+    "name": "Fairbanks Street",
+    "lat": 42.339725,
+    "lon": -71.131073,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-fenwy",
+    "name": "Fenway",
+    "lat": 42.345403,
+    "lon": -71.104213,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-fenwd",
+    "name": "Fenwood Road",
+    "lat": 42.333706,
+    "lon": -71.105728,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-fldcr",
+    "name": "Fields Corner",
+    "lat": 42.300093,
+    "lon": -71.061667,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-forhl",
+    "name": "Forest Hills",
+    "lat": 42.300713,
+    "lon": -71.113943,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-gilmn",
+    "name": "Gilman Square",
+    "lat": 42.387928,
+    "lon": -71.096766,
+    "municipality": "Somerville",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-gover",
+    "name": "Government Center",
+    "lat": 42.359705,
+    "lon": -71.059215,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      },
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-grnst",
+    "name": "Green Street",
+    "lat": 42.310525,
+    "lon": -71.107414,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-grigg",
+    "name": "Griggs Street",
+    "lat": 42.348545,
+    "lon": -71.134949,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-harsq",
+    "name": "Harvard",
+    "lat": 42.373362,
+    "lon": -71.118956,
+    "municipality": "Cambridge",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-harvd",
+    "name": "Harvard Avenue",
+    "lat": 42.350243,
+    "lon": -71.131355,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-hwsst",
+    "name": "Hawes Street",
+    "lat": 42.344906,
+    "lon": -71.111145,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-haecl",
+    "name": "Haymarket",
+    "lat": 42.363021,
+    "lon": -71.05829,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      },
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-hsmnl",
+    "name": "Heath Street",
+    "lat": 42.328316,
+    "lon": -71.110252,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-hymnl",
+    "name": "Hynes Convention Center",
+    "lat": 42.347888,
+    "lon": -71.087903,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-jaksn",
+    "name": "Jackson Square",
+    "lat": 42.323132,
+    "lon": -71.099592,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-jfk",
+    "name": "JFK/UMass",
+    "lat": 42.320685,
+    "lon": -71.052391,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-knncl",
+    "name": "Kendall/MIT",
+    "lat": 42.3624908,
+    "lon": -71.0861765,
+    "municipality": "Cambridge",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-kencl",
+    "name": "Kenmore",
+    "lat": 42.348949,
+    "lon": -71.095169,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-kntst",
+    "name": "Kent Street",
+    "lat": 42.344074,
+    "lon": -71.114197,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-lech",
+    "name": "Lechmere",
+    "lat": 42.371572,
+    "lon": -71.076584,
+    "municipality": "Cambridge",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-longw",
+    "name": "Longwood",
+    "lat": 42.341702,
+    "lon": -71.109956,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-lngmd",
+    "name": "Longwood Medical Area",
+    "lat": 42.33596,
+    "lon": -71.100052,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-mgngl",
+    "name": "Magoun Square",
+    "lat": 42.393682,
+    "lon": -71.1063879,
+    "municipality": "Somerville",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-mlmnl",
+    "name": "Malden Center",
+    "lat": 42.426632,
+    "lon": -71.07411,
+    "municipality": "Malden",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-masta",
+    "name": "Massachusetts Avenue",
+    "lat": 42.341512,
+    "lon": -71.083423,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-matt",
+    "name": "Mattapan",
+    "lat": 42.26762,
+    "lon": -71.092486,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Mattapan",
+        "group": "Mattapan",
+        "branch": null,
+        "label": "Mattapan Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-mvbcl",
+    "name": "Maverick",
+    "lat": 42.3691186,
+    "lon": -71.0395296,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-mdftf",
+    "name": "Medford/Tufts",
+    "lat": 42.407975,
+    "lon": -71.117044,
+    "municipality": "Medford",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-miltt",
+    "name": "Milton",
+    "lat": 42.270349,
+    "lon": -71.067266,
+    "municipality": "Milton",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Mattapan",
+        "group": "Mattapan",
+        "branch": null,
+        "label": "Mattapan Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-mispk",
+    "name": "Mission Park",
+    "lat": 42.333195,
+    "lon": -71.109756,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-mfa",
+    "name": "Museum of Fine Arts",
+    "lat": 42.337711,
+    "lon": -71.095512,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-newto",
+    "name": "Newton Centre",
+    "lat": 42.329443,
+    "lon": -71.192414,
+    "municipality": "Newton",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-newtn",
+    "name": "Newton Highlands",
+    "lat": 42.322381,
+    "lon": -71.205509,
+    "municipality": "Newton",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-nqncy",
+    "name": "North Quincy",
+    "lat": 42.275275,
+    "lon": -71.029583,
+    "municipality": "Quincy",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-north",
+    "name": "North Station",
+    "lat": 42.365577,
+    "lon": -71.06129,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      },
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-nuniv",
+    "name": "Northeastern University",
+    "lat": 42.340401,
+    "lon": -71.088806,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-ogmnl",
+    "name": "Oak Grove",
+    "lat": 42.43668,
+    "lon": -71.071097,
+    "municipality": "Malden",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-orhte",
+    "name": "Orient Heights",
+    "lat": 42.386867,
+    "lon": -71.004736,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-brico",
+    "name": "Packard's Corner",
+    "lat": 42.351967,
+    "lon": -71.125031,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-pktrm",
+    "name": "Park Street",
+    "lat": 42.3563946,
+    "lon": -71.0624242,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      },
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-portr",
+    "name": "Porter",
+    "lat": 42.3884,
+    "lon": -71.119149,
+    "municipality": "Cambridge",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-prmnl",
+    "name": "Prudential",
+    "lat": 42.34557,
+    "lon": -71.081696,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-qamnl",
+    "name": "Quincy Adams",
+    "lat": 42.233391,
+    "lon": -71.007153,
+    "municipality": "Quincy",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-qnctr",
+    "name": "Quincy Center",
+    "lat": 42.251809,
+    "lon": -71.005409,
+    "municipality": "Quincy",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-rsmnl",
+    "name": "Reservoir",
+    "lat": 42.335088,
+    "lon": -71.148758,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-rbmnl",
+    "name": "Revere Beach",
+    "lat": 42.4078425,
+    "lon": -70.9925332,
+    "municipality": "Revere",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-river",
+    "name": "Riverside",
+    "lat": 42.337352,
+    "lon": -71.252685,
+    "municipality": "Newton",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-rvrwy",
+    "name": "Riverway",
+    "lat": 42.331684,
+    "lon": -71.111931,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-rcmnl",
+    "name": "Roxbury Crossing",
+    "lat": 42.331397,
+    "lon": -71.095451,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-rugg",
+    "name": "Ruggles",
+    "lat": 42.336377,
+    "lon": -71.088961,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-smary",
+    "name": "Saint Mary's Street",
+    "lat": 42.345974,
+    "lon": -71.107353,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-stpul",
+    "name": "Saint Paul Street",
+    "lat": 42.343327,
+    "lon": -71.116997,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-shmnl",
+    "name": "Savin Hill",
+    "lat": 42.31129,
+    "lon": -71.053331,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-spmnl",
+    "name": "Science Park/West End",
+    "lat": 42.366664,
+    "lon": -71.067666,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      },
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-smmnl",
+    "name": "Shawmut",
+    "lat": 42.2931258,
+    "lon": -71.065738,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-sstat",
+    "name": "South Station",
+    "lat": 42.352271,
+    "lon": -71.055242,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-sougr",
+    "name": "South Street",
+    "lat": 42.3396,
+    "lon": -71.157661,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-state",
+    "name": "State",
+    "lat": 42.358978,
+    "lon": -71.057598,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      },
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-sbmnl",
+    "name": "Stony Brook",
+    "lat": 42.317062,
+    "lon": -71.104248,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-sdmnl",
+    "name": "Suffolk Downs",
+    "lat": 42.3905007,
+    "lon": -70.9971226,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-sull",
+    "name": "Sullivan Square",
+    "lat": 42.383975,
+    "lon": -71.076994,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-sumav",
+    "name": "Summit Avenue",
+    "lat": 42.34111,
+    "lon": -71.12561,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-sthld",
+    "name": "Sutherland Road",
+    "lat": 42.341614,
+    "lon": -71.146202,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-symcl",
+    "name": "Symphony",
+    "lat": 42.342687,
+    "lon": -71.085056,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-E",
+        "group": "Green",
+        "branch": "E",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-tapst",
+    "name": "Tappan Street",
+    "lat": 42.338459,
+    "lon": -71.138702,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-tumnl",
+    "name": "Tufts Medical Center",
+    "lat": 42.349662,
+    "lon": -71.063917,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-unsqu",
+    "name": "Union Square",
+    "lat": 42.377359,
+    "lon": -71.094761,
+    "municipality": "Somerville",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-valrd",
+    "name": "Valley Road",
+    "lat": 42.268347,
+    "lon": -71.081343,
+    "municipality": "Milton",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Mattapan",
+        "group": "Mattapan",
+        "branch": null,
+        "label": "Mattapan Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-waban",
+    "name": "Waban",
+    "lat": 42.325845,
+    "lon": -71.230609,
+    "municipality": "Newton",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-wrnst",
+    "name": "Warren Street",
+    "lat": 42.348343,
+    "lon": -71.140457,
+    "municipality": "Boston",
+    "wheelchairBoarding": 2,
+    "wheelchair": "inaccessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-bcnwa",
+    "name": "Washington Square",
+    "lat": 42.339394,
+    "lon": -71.13533,
+    "municipality": "Brookline",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-C",
+        "group": "Green",
+        "branch": "C",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-wascm",
+    "name": "Washington Street",
+    "lat": 42.343864,
+    "lon": -71.142853,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-B",
+        "group": "Green",
+        "branch": "B",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-welln",
+    "name": "Wellington",
+    "lat": 42.40237,
+    "lon": -71.077082,
+    "municipality": "Medford",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Orange",
+        "group": "Orange",
+        "branch": null,
+        "label": "Orange Line",
+        "color": "#ED8B00",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-wlsta",
+    "name": "Wollaston",
+    "lat": 42.2665139,
+    "lon": -71.0203369,
+    "municipality": "Quincy",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Red",
+        "group": "Red",
+        "branch": null,
+        "label": "Red Line",
+        "color": "#DA291C",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-wondl",
+    "name": "Wonderland",
+    "lat": 42.41342,
+    "lon": -70.991648,
+    "municipality": "Revere",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-wimnl",
+    "name": "Wood Island",
+    "lat": 42.3796403,
+    "lon": -71.0228654,
+    "municipality": "Boston",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Blue",
+        "group": "Blue",
+        "branch": null,
+        "label": "Blue Line",
+        "color": "#003DA5",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "subway"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  },
+  {
+    "id": "place-woodl",
+    "name": "Woodland",
+    "lat": 42.332902,
+    "lon": -71.243362,
+    "municipality": "Newton",
+    "wheelchairBoarding": 1,
+    "wheelchair": "accessible",
+    "coordinateFrom": "station",
+    "lines": [
+      {
+        "id": "Green-D",
+        "group": "Green",
+        "branch": "D",
+        "label": "Green Line",
+        "color": "#00843D",
+        "textColor": "#FFFFFF",
+        "colorSource": "mbta",
+        "vehicle": "light-rail"
+      }
+    ],
+    "source": "MBTA V3 API",
+    "provider": "MassDOT"
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "id": "bu",
+    "label": "Boston University",
+    "shortLabel": "BU",
+    "stationId": "place-bucen",
+    "stationName": "Boston University Central"
+  },
+  {
+    "id": "northeastern",
+    "label": "Northeastern University",
+    "shortLabel": "Northeastern",
+    "stationId": "place-nuniv",
+    "stationName": "Northeastern University"
+  },
+  {
+    "id": "mit",
+    "label": "MIT",
+    "shortLabel": "MIT",
+    "stationId": "place-knncl",
+    "stationName": "Kendall/MIT"
+  },
+  {
+    "id": "harvard",
+    "label": "Harvard University",
+    "shortLabel": "Harvard",
+    "stationId": "place-harsq",
+    "stationName": "Harvard"
+  },
+  {
+    "id": "downtown",
+    "label": "Downtown Boston",
+    "shortLabel": "Downtown",
+    "stationId": "place-pktrm",
+    "stationName": "Park Street"
+  }
+]

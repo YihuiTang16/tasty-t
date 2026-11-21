@@ -1,0 +1,130 @@
+{
+  "project": "Tasty T",
+  "retrievedAt": "2026-11-21T15:32:24.642Z",
+  "osmRetrievedAt": "2026-11-21T15:31:44.507Z",
+  "mbtaRetrievedAt": "2026-11-21T15:32:22.462Z",
+  "osmEndpoint": "https://overpass-api.de/api/interpreter",
+  "osmMode": "combined",
+  "mbtaApi": "https://api-v3.mbta.com",
+  "bbox": {
+    "south": 42.315,
+    "west": -71.175,
+    "north": 42.41,
+    "east": -71.015
+  },
+  "placeCount": 3446,
+  "stationCount": 125,
+  "exclusions": {
+    "missingName": 0,
+    "genericName": 0,
+    "invalidName": 5,
+    "missingCoords": 0,
+    "outOfBounds": 11,
+    "uncategorized": 0,
+    "noisyAttraction": 0,
+    "disused": 7,
+    "privateAccess": 11,
+    "duplicate": 19
+  },
+  "categories": {
+    "restaurant": 1333,
+    "park": 533,
+    "fast_food": 487,
+    "cafe": 416,
+    "bar": 144,
+    "bakery": 97,
+    "theatre": 71,
+    "garden": 68,
+    "museum": 65,
+    "ice_cream": 59,
+    "attraction": 42,
+    "gallery": 34,
+    "arts_centre": 29,
+    "nightclub": 21,
+    "cinema": 19,
+    "food_court": 17,
+    "sweets": 11
+  },
+  "cuisineFamilies": {
+    "not-food": 881,
+    "coffee-desserts": 697,
+    "unknown": 526,
+    "other": 445,
+    "asian": 377,
+    "american": 278,
+    "italian": 242
+  },
+  "budget": {
+    "unknown": 3417,
+    "free": 26,
+    "listed": 3
+  },
+  "lines": {
+    "Green": 93,
+    "Red": 22,
+    "Orange": 20,
+    "Blue": 12,
+    "Mattapan": 8
+  },
+  "campuses": [
+    {
+      "id": "bu",
+      "stationId": "place-bucen",
+      "stationName": "Boston University Central"
+    },
+    {
+      "id": "northeastern",
+      "stationId": "place-nuniv",
+      "stationName": "Northeastern University"
+    },
+    {
+      "id": "mit",
+      "stationId": "place-knncl",
+      "stationName": "Kendall/MIT"
+    },
+    {
+      "id": "harvard",
+      "stationId": "place-harsq",
+      "stationName": "Harvard"
+    },
+    {
+      "id": "downtown",
+      "stationId": "place-pktrm",
+      "stationName": "Park Street"
+    }
+  ],
+  "licenses": {
+    "places": {
+      "provider": "OpenStreetMap contributors",
+      "license": "Open Database License (ODbL) 1.0",
+      "url": "https://www.openstreetmap.org/copyright",
+      "attribution": "© OpenStreetMap contributors"
+    },
+    "stations": {
+      "provider": "MassDOT",
+      "agreement": "MassDOT Developers License Agreement",
+      "url": "https://cdn.mbta.com/sites/default/files/2023-08/mbta-massdot-develop-license-agreement.pdf",
+      "attribution": "Station data provided by MassDOT"
+    }
+  },
+  "cleaningRules": [
+    "Kept named OpenStreetMap nodes, ways, and relations for restaurants, cafes, fast food, bars, ice cream, food courts, bakeries, pastry and confectionery shops, museums, galleries, attractions, parks, gardens, theaters, cinemas, arts centers, and nightclubs inside the Boston/Cambridge bounding box.",
+    "Used the name tag, not name:en, so a feature without a primary name was dropped.",
+    "Dropped records with missing or non-finite coordinates, coordinates outside the bounding box, or no supported category.",
+    "Dropped generic names that are only a category word (for example Restaurant, Cafe, Park) because they are not usable destinations.",
+    "Dropped records tagged private or no access, permanently closed (opening_hours closed/off), or disused, abandoned, demolished, or razed.",
+    "Dropped statue, plaque, bust, mural, graffiti, artwork, stone, and clock attractions that have no website, Wikipedia, or Wikidata link.",
+    "Collapsed duplicate OpenStreetMap ids. Collapsed the same normalized name within 75 meters and kept the record with more source fields.",
+    "Did not infer cuisine from the venue name. Cuisine family comes from the cuisine tag, or from the amenity when the amenity itself is a cafe, bakery, sweets shop, or ice cream shop.",
+    "Did not invent prices. Budget is free only for fee=no, fee=free, or a simple charge of zero. A simple numeric charge is mapped into a budget tier. Every other place stays unknown.",
+    "Addresses are concatenated only from addr:* tags that exist. Missing parts stay blank.",
+    "Nearest-station distances are not stored in the place file. The app calculates straight-line distance from MBTA coordinates at ranking time and does not treat that distance as a travel time.",
+    "Rapid transit stations are MBTA route types 0 (light rail) and 1 (subway) for Red, Orange, Blue, Green branches, and Mattapan. Entrances and boarding areas are not separate stations. Child stops roll up to their parent station when that parent is in the feed."
+  ],
+  "notIncluded": [
+    "Restaurant menu prices are not in OpenStreetMap. This build does not estimate them.",
+    "Straight-line distances are computed in the app. Travel times and transfer directions are not.",
+    "Silver Line and local bus stops are not part of this station set.",
+    "The app is not affiliated with the MBTA or MassDOT and does not use their logos."
+  ]
+}
