@@ -68,9 +68,11 @@ export function Results({
 
           <p className="mb-4 max-w-3xl text-sm leading-6 text-muted">
             Scores show how well each place fits your selections; they are not reviews or star ratings.{" "}
-            {knownBudget === 0
-              ? "No prices or fees are listed for these places in OpenStreetMap, so budget was left out of the score instead of guessed."
-              : `${knownBudget} of ${results.length} places have a listed price or fee. For the others, budget was left out of the score instead of guessed.`}{" "}
+            {submitted.lateNightOnly
+              ? "Prices are not listed for these verified overnight spots, so budget was left out of the score instead of guessed."
+              : knownBudget === 0
+                ? "No prices or fees are listed for these places in OpenStreetMap, so budget was left out of the score instead of guessed."
+                : `${knownBudget} of ${results.length} places have a listed price or fee. For the others, budget was left out of the score instead of guessed.`}{" "}
             Transit directions open Google Maps. Tasty T ranks by straight-line proximity and does not predict MBTA ride times.
             {submitted.lateNightOnly ? " These businesses list 24/7 hours on their official websites; MBTA service may not be running at your overnight travel time, so check the transit directions before leaving." : ""}
           </p>
