@@ -4,6 +4,16 @@ Tasty T is a static Vite app. The cleaned datasets are imported into the JavaScr
 
 Do not submit the project to Devpost unless you choose to.
 
+## GitHub Pages
+
+The repository includes `.github/workflows/pages.yml`. After the code is on GitHub under your account, each push to `main` builds the site and publishes `dist`.
+
+1. Create the GitHub repository from this project and name it `tasty-t`. Make it public if judges or classmates need the link.
+2. In the repository, open Settings, then Pages, then Build and deployment. Set the source to GitHub Actions if it is not already.
+3. Open the Actions tab and confirm the “Deploy to GitHub Pages” workflow succeeds.
+
+For a repository named `tasty-t` on the account `YihuiTang16`, the site address is `https://yihuitang16.github.io/tasty-t/`. Asset paths are relative, so the same build also works at the root of a Vercel or Netlify site.
+
 ## Vercel
 
 1. Push the repository to GitHub.

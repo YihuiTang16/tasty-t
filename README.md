@@ -76,7 +76,7 @@ Place records are © OpenStreetMap contributors, under the Open Database License
 
 ## Deploy
 
-See [DEPLOYMENT.md](DEPLOYMENT.md). Vercel and Netlify can build with `npm run build` and publish `dist`. No environment variables are required.
+See [DEPLOYMENT.md](DEPLOYMENT.md). A push to `main` on GitHub runs the Pages workflow and publishes `dist`. Vercel and Netlify can use the same build. No environment variables are required.
 
 ## Hackathon notes
 
