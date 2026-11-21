@@ -55,17 +55,16 @@ export function DiscoveryForm({
       }}
       noValidate
     >
-      <div className="mb-5 flex items-end justify-between gap-3">
-        <div>
-          <p className="text-xs font-semibold tracking-[0.16em] text-accent-dark uppercase">Plan a trip</p>
-          <h2 className="font-display text-3xl text-ink">Build your Boston outing</h2>
+      <section aria-labelledby="quick-plans-heading" className="rounded-3xl border border-accent/35 bg-[#edf6f4] p-4 sm:p-5">
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="text-xs font-semibold tracking-[0.16em] text-accent-dark uppercase">Start here · Option 1</p>
+            <h2 id="quick-plans-heading" className="mt-1 font-display text-3xl text-ink">Need an idea? Choose a Quick plan.</h2>
+            <p className="mt-1 text-sm text-muted">One click gives you a ready-made Boston outing.</p>
+          </div>
+          <span className="rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-accent-dark">Ready to go</span>
         </div>
-      </div>
-
-      <div className="mb-6">
-        <p className="text-xs font-semibold tracking-[0.16em] text-accent-dark uppercase">Quick plans</p>
-        <p className="mt-1 text-sm text-muted">Pick a starting point, then customize every detail below if you like.</p>
-        <div className="mt-3 grid gap-2 sm:grid-cols-2">
+        <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
           {[
             { title: "BU food date", trip: SAMPLE_TRIP, campus: "Boston University" },
             { title: "Study cafe", trip: STUDY_TRIP, campus: "Northeastern University" },
@@ -76,23 +75,30 @@ export function DiscoveryForm({
               key={preset.title}
               type="button"
               onClick={() => onPreset(preset.trip)}
-              className="min-h-24 rounded-2xl border border-line bg-paper px-3 py-3 text-left transition hover:border-accent hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-harbor"
+              className="flex min-h-28 flex-col items-start rounded-2xl border border-line bg-white px-4 py-3 text-left transition hover:-translate-y-0.5 hover:border-accent hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-harbor"
             >
               <span className="block text-sm font-semibold">{preset.title}</span>
               <span className="mt-1 block text-xs leading-5 text-muted">{describeTrip(preset.trip, preset.campus)}</span>
               {preset.trip.lateNightOnly ? <span className="mt-1 block text-xs text-muted">Only listings verified as open 24/7</span> : null}
-              <span className="mt-2 block text-xs font-semibold text-accent-dark">Use this plan →</span>
+              <span className="mt-auto pt-3 text-xs font-semibold text-accent-dark">Use this plan →</span>
             </button>
           ))}
         </div>
+      </section>
+
+      <div className="flex items-center gap-3 py-1" aria-hidden="true">
+        <span className="h-px flex-1 bg-line" />
+        <span className="rounded-full border border-line bg-paper px-3 py-1 text-xs font-semibold tracking-wider text-muted">OR</span>
+        <span className="h-px flex-1 bg-line" />
       </div>
 
-      <div className="mb-3 border-t border-line pt-5">
-        <p className="text-xs font-semibold tracking-[0.16em] text-accent-dark uppercase">Make it yours</p>
-        <p className="mt-1 text-sm text-muted">Customize your starting point and preferences.</p>
-      </div>
-
-      <div className="grid gap-5">
+      <section aria-labelledby="custom-filters-heading" className="rounded-3xl border border-line bg-paper/70 p-4 sm:p-5">
+        <div>
+          <p className="text-xs font-semibold tracking-[0.16em] text-harbor uppercase">Option 2 · Make it yours</p>
+          <h2 id="custom-filters-heading" className="mt-1 font-display text-3xl text-ink">Choose your own filters.</h2>
+          <p className="mt-1 text-sm text-muted">Set a starting point, then pick the budget and outing that fit you.</p>
+        </div>
+      <div className="mt-5 grid gap-x-5 gap-y-6 md:grid-cols-2 xl:grid-cols-3">
         <RadioGroup
           name="campus"
           label="Starting point"
@@ -137,7 +143,7 @@ export function DiscoveryForm({
           onChange={(time: TimeChoice) => onChange({ time })}
         />
 
-        <label className="flex items-start gap-3 rounded-2xl border border-line bg-paper px-3 py-3">
+        <label className="flex items-start gap-3 rounded-2xl border border-line bg-white px-3 py-3 md:col-span-2 xl:col-span-3">
           <input
             type="checkbox"
             className="mt-1 h-4 w-4 accent-harbor"
@@ -153,7 +159,9 @@ export function DiscoveryForm({
         </label>
       </div>
 
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+      </section>
+
+      <div className="mt-5 flex flex-col gap-3 sm:flex-row">
         <button
           type="submit"
           className="inline-flex min-h-12 items-center justify-center rounded-full bg-accent px-5 font-semibold text-white transition hover:bg-accent-dark"
