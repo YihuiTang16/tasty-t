@@ -10,12 +10,12 @@ It is an independent student project for BostonHacks BostonBound 2026, on the Bo
 
 ## Try it
 
-The sample trip starts at Boston University, chooses Asian food, a date night, the $15–$25 budget, and two hours. **Try a Sample Trip** fills the form and ranks real places, including Thai and Chinese restaurants by the Green Line B and C branches.
+Choose **BU food date** to see a sample trip from Boston University with Asian food, a date night, a $15–$25 budget, and a two-hour exploration range. It ranks real places, including Thai and Chinese restaurants by the Green Line B and C branches.
 
 Two other presets are on the form:
 
 - **Study cafe** starts at Northeastern University.
-- **Weekend from Harvard** starts at Harvard and prefers places OpenStreetMap lists as free.
+- **Free weekend outing** starts at Harvard and prefers places OpenStreetMap lists as free.
 
 ## Run it locally
 
