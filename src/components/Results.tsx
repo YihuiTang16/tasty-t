@@ -1,4 +1,5 @@
 import { MapErrorBoundary } from "./MapErrorBoundary.tsx";
+import { MiniOuting } from "./MiniOuting.tsx";
 import { MapPanel } from "./MapPanel.tsx";
 import { PlaceCard } from "./PlaceCard.tsx";
 import { optionLabel, BUDGET_OPTIONS, CUISINE_OPTIONS, EXPERIENCE_OPTIONS, TIME_OPTIONS } from "../lib/options.ts";
@@ -59,6 +60,7 @@ export function Results({
               <p className="mt-1 text-sm text-muted">
                 {optionLabel(CUISINE_OPTIONS, submitted.cuisine)} · {optionLabel(BUDGET_OPTIONS, submitted.budget)} ·{" "}
                 {optionLabel(EXPERIENCE_OPTIONS, submitted.experience)} · {optionLabel(TIME_OPTIONS, submitted.time)}
+                {submitted.lateNightOnly ? " · Official-site verified 24/7 listings" : ""}
                 {submitted.stepFree ? " · Step-free preferred" : ""}
               </p>
             </div>
@@ -70,7 +72,10 @@ export function Results({
               ? "No prices or fees are listed for these places in OpenStreetMap, so budget was left out of the score instead of guessed."
               : `${knownBudget} of ${results.length} places have a listed price or fee. For the others, budget was left out of the score instead of guessed.`}{" "}
             Transit directions open Google Maps. Tasty T ranks by straight-line proximity and does not predict MBTA ride times.
+            {submitted.lateNightOnly ? " These businesses list 24/7 hours on their official websites; MBTA service may not be running at your overnight travel time, so check the transit directions before leaving." : ""}
           </p>
+
+          <MiniOuting results={results} />
 
           <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.92fr)]">
             <div className="order-2 grid gap-4 lg:order-1">
