@@ -145,26 +145,26 @@ export default function App() {
       </header>
 
       <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12">
-        <section className="grid items-start gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+        <section className="space-y-8">
           <div>
             <p className="text-xs font-semibold tracking-[0.18em] text-accent-dark uppercase">Boston, without a car</p>
-            <h1 className="mt-3 max-w-xl font-display text-5xl leading-[0.95] text-ink sm:text-6xl">
+            <h1 className="mt-3 max-w-4xl font-display text-5xl leading-[0.95] text-ink sm:text-6xl">
               Find your next bite. Take the T there.
             </h1>
-            <p className="mt-4 max-w-xl text-lg leading-7 text-muted">
+            <p className="mt-4 max-w-3xl text-lg leading-7 text-muted">
               Choose your campus, budget, and kind of outing. SUBwayTREK ranks Boston food and local spots around your preferences, then shows nearby MBTA stations and transit directions.
             </p>
-            <dl className="mt-6 grid grid-cols-3 gap-3 max-w-lg">
-              <div className="rounded-2xl bg-card px-3 py-3">
+            <dl className="mt-6 grid max-w-2xl grid-cols-3 gap-3">
+              <div className="rounded-2xl bg-card px-4 py-3">
                 <dt className="text-xs text-muted">Places</dt>
                 <dd className="font-display text-2xl">{meta.placeCount.toLocaleString("en-US")}</dd>
               </div>
-              <div className="rounded-2xl bg-card px-3 py-3">
+              <div className="rounded-2xl bg-card px-4 py-3">
                 <dt className="text-xs text-muted">Stations</dt>
                 <dd className="font-display text-2xl">{meta.stationCount.toLocaleString("en-US")}</dd>
               </div>
-              <div className="rounded-2xl bg-card px-3 py-3">
-                <dt className="text-xs text-muted">Lines</dt>
+              <div className="rounded-2xl bg-card px-4 py-3">
+                <dt className="text-xs text-muted">T lines</dt>
                 <dd className="mt-2">
                   <LineDots lines={legend} />
                 </dd>
@@ -179,6 +179,7 @@ export default function App() {
               ))}
             </p>
           </div>
+
           <div id="plan" className="scroll-mt-24">
             <DiscoveryForm
               draft={draft}
