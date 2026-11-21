@@ -1,4 +1,4 @@
-import { ArrowUpRight, MapPin, TrainFront } from "lucide-react";
+import { ArrowUpRight, TrainFront } from "lucide-react";
 import { LineDots } from "./LineDots.tsx";
 import { formatMiles, formatStationLines } from "../lib/format.ts";
 import type { Recommendation } from "../types.ts";
