@@ -36,9 +36,9 @@ export function PlaceCard({ result, index, selected, originName, onViewMap }: Pl
     >
       <div className="flex items-start justify-between gap-3">
         <p className="font-display text-3xl text-ink/25">{String(index + 1).padStart(2, "0")}</p>
-        <p className="text-right">
+        <p className="text-right" aria-label={`Preference fit score ${Math.round(result.score * 100)} out of 100`}>
           <span className="font-display block text-3xl leading-none">{Math.round(result.score * 100)}</span>
-          <span className="text-[11px] tracking-[0.14em] text-muted uppercase">match</span>
+          <span className="text-[11px] tracking-[0.08em] text-muted uppercase">fit score</span>
         </p>
       </div>
 
@@ -60,12 +60,6 @@ export function PlaceCard({ result, index, selected, originName, onViewMap }: Pl
             {formatMiles(result.stationMiles)} from {station.name} · {formatStationLines(station.lines)}
           </span>
         </p>
-        <p className="flex items-start gap-2 text-muted">
-          <MapPin className="mt-0.5 h-4 w-4 shrink-0" aria-hidden="true" />
-          <span>
-            {formatMiles(result.originMiles)} from {originName} · straight line
-          </span>
-        </p>
       </div>
 
       <div className="mt-3 flex flex-wrap gap-2 text-xs font-medium">
@@ -74,7 +68,7 @@ export function PlaceCard({ result, index, selected, originName, onViewMap }: Pl
       </div>
 
       <p className="mt-4 text-sm leading-6">
-        <span className="font-semibold">Why we picked this for you. </span>
+        <span className="font-semibold">Why it fits. </span>
         {result.explanation}
       </p>
 
@@ -127,6 +121,7 @@ export function PlaceCard({ result, index, selected, originName, onViewMap }: Pl
       <details className="mt-4 text-sm text-muted">
         <summary className="cursor-pointer font-medium text-ink">Score details and source</summary>
         <dl className="mt-3 grid gap-1">
+          <div>{formatMiles(result.originMiles)} from {originName} · straight-line distance from your starting station.</div>
           <div>Cuisine {result.cuisineScore.toFixed(2)} · weight {Math.round(result.weights.cuisine * 100)}%</div>
           <div>Transit {result.transitScore.toFixed(2)} · weight {Math.round(result.weights.transit * 100)}%</div>
           <div>
