@@ -4,7 +4,7 @@ Explore Boston, one T stop at a time.
 
 The live site is [https://yihuitang16.github.io/tasty-t/](https://yihuitang16.github.io/tasty-t/).
 
-Tasty T helps Boston college students who do not have a car find food, cafes, museums, and parks they can reach by subway or light rail. You pick a campus station, a budget, a cuisine, an outing, and how much time you have. The app ranks real places and links out to Google Maps public transit directions.
+Tasty T helps Boston college students who do not have a car find food, cafes, museums, and parks they can reach by subway or light rail. You pick a campus station, a budget, a cuisine, an outing, and how much time you have. The app ranks real places, suggests a nearby food-and-activity pairing when the results allow, and links out to Google Maps public transit directions.
 
 It is an independent student project for BostonHacks BostonBound 2026, on the Bos(tons) of Eats and Streets track. It is not affiliated with the MBTA or MassDOT.
 
