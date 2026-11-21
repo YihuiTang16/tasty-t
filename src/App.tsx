@@ -1,4 +1,5 @@
 import { useMemo, useState } from "react";
+import { Brand } from "./components/Brand.tsx";
 import { DiscoveryForm } from "./components/DiscoveryForm.tsx";
 import { Footer } from "./components/Footer.tsx";
 import { LineDots } from "./components/LineDots.tsx";
@@ -6,7 +7,6 @@ import { Results } from "./components/Results.tsx";
 import { campuses, meta, places, stations } from "./data/index.ts";
 import { scrollToId } from "./lib/format.ts";
 import { recommend } from "./lib/recommend.ts";
-import { SAMPLE_TRIP } from "./lib/presets.ts";
 import type { LineInfo, TripDraft, TripPreferences } from "./types.ts";
 
 const EMPTY_DRAFT: TripDraft = {
@@ -16,6 +16,7 @@ const EMPTY_DRAFT: TripDraft = {
   experience: null,
   time: null,
   stepFree: false,
+  lateNightOnly: false,
 };
 
 const LINE_ORDER = ["Red", "Orange", "Blue", "Green", "Mattapan"];
@@ -63,7 +64,7 @@ export default function App() {
   const origin = stations.find((station) => station.id === campus?.stationId) ?? null;
 
   function applyTrip(trip: TripPreferences) {
-    setDraft({ ...trip });
+    setDraft({ ...EMPTY_DRAFT, ...trip, lateNightOnly: trip.lateNightOnly ?? false });
     setFieldErrors([]);
     setPickedId(null);
     setFollowedId(null);
@@ -89,7 +90,7 @@ export default function App() {
       document.getElementById(`field-${missing[0]}`)?.focus();
       return;
     }
-    applyTrip({ campusId, budget, cuisine, experience, time, stepFree: draft.stepFree });
+    applyTrip({ campusId, budget, cuisine, experience, time, stepFree: draft.stepFree, lateNightOnly: draft.lateNightOnly });
   }
 
   function focusFromCard(id: string) {
@@ -127,45 +128,43 @@ export default function App() {
       <header className="sticky top-0 z-40 border-b border-line/80 bg-paper/90 backdrop-blur-md">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-3 px-4 py-3 sm:px-6">
           <a href="#top" className="flex items-center gap-2 text-ink">
-            <span className="grid h-9 w-9 place-items-center rounded-xl bg-ink text-sm font-semibold text-paper">Tt</span>
-            <span className="font-display text-2xl leading-none">Tasty T</span>
+            <Brand />
           </a>
           <div className="flex items-center gap-2">
             <a href="#how" className="hidden text-sm font-medium text-muted sm:inline">
               How ranking works
             </a>
-            <button
-              type="button"
-              onClick={() => applyTrip(SAMPLE_TRIP)}
-              className="min-h-11 rounded-full bg-ink px-4 text-sm font-semibold text-paper transition hover:bg-harbor"
+            <a
+              href="#plan"
+              className="inline-flex min-h-11 items-center rounded-full bg-ink px-4 text-sm font-semibold text-paper transition hover:bg-harbor"
             >
-              Try a Sample Trip
-            </button>
+              Plan a trip
+            </a>
           </div>
         </div>
       </header>
 
       <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-12">
-        <section className="grid items-start gap-8 lg:grid-cols-[1.05fr_0.95fr]">
+        <section className="space-y-8">
           <div>
             <p className="text-xs font-semibold tracking-[0.18em] text-accent-dark uppercase">Boston, without a car</p>
-            <h1 className="mt-3 max-w-xl font-display text-5xl leading-[0.95] text-ink sm:text-6xl">
-              Explore Boston, one T stop at a time.
+            <h1 className="mt-3 max-w-4xl font-display text-5xl leading-[0.95] text-ink sm:text-6xl">
+              Find your next bite. Take the T there.
             </h1>
-            <p className="mt-4 max-w-xl text-lg leading-7 text-muted">
-              Food, cafes, museums, and parks for students who ride the subway and light rail. Start at a campus station and get a short list you can actually reach.
+            <p className="mt-4 max-w-3xl text-lg leading-7 text-muted">
+              Choose your campus, budget, and kind of outing. SUBwayTREK ranks Boston food and local spots around your preferences, then shows nearby MBTA stations and transit directions.
             </p>
-            <dl className="mt-6 grid grid-cols-3 gap-3 max-w-lg">
-              <div className="rounded-2xl bg-card px-3 py-3">
+            <dl className="mt-6 grid max-w-2xl grid-cols-3 gap-3">
+              <div className="rounded-2xl bg-card px-4 py-3">
                 <dt className="text-xs text-muted">Places</dt>
                 <dd className="font-display text-2xl">{meta.placeCount.toLocaleString("en-US")}</dd>
               </div>
-              <div className="rounded-2xl bg-card px-3 py-3">
+              <div className="rounded-2xl bg-card px-4 py-3">
                 <dt className="text-xs text-muted">Stations</dt>
                 <dd className="font-display text-2xl">{meta.stationCount.toLocaleString("en-US")}</dd>
               </div>
-              <div className="rounded-2xl bg-card px-3 py-3">
-                <dt className="text-xs text-muted">Lines</dt>
+              <div className="rounded-2xl bg-card px-4 py-3">
+                <dt className="text-xs text-muted">T lines</dt>
                 <dd className="mt-2">
                   <LineDots lines={legend} />
                 </dd>
@@ -180,6 +179,7 @@ export default function App() {
               ))}
             </p>
           </div>
+
           <div id="plan" className="scroll-mt-24">
             <DiscoveryForm
               draft={draft}
@@ -210,7 +210,7 @@ export default function App() {
             ))}
           </div>
           <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
-            Time changes how strongly distance from your start matters. It is not a predicted wait or ride. For Explore the city and Weekend adventure, parks without a Wikipedia or Wikidata link rank lower. The match number is this score, not a review.
+            Your exploration range changes how strongly proximity to your campus station affects the ranking. Distances are straight-line estimates, not ride times. For city and weekend outings, destination parks rank higher than small neighborhood parks. A match score reflects your preferences, not reviews.
           </p>
         </section>
 

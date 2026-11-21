@@ -1,3 +1,4 @@
+import { Brand } from "./Brand.tsx";
 import { formatRetrieved } from "../lib/format.ts";
 
 interface FooterProps {
@@ -20,9 +21,9 @@ export function Footer({
   return (
     <footer className="mt-16 border-t border-line">
       <div className="mx-auto grid max-w-6xl gap-6 px-4 py-10 text-sm text-muted sm:px-6">
-        <p className="font-display text-2xl text-ink">Tasty T</p>
+        <p><Brand /></p>
         <p className="max-w-3xl leading-6">
-          An independent student project for BostonHacks BostonBound, on the Bos(tons) of Eats and Streets track. Tasty T is not
+          An independent student project for BostonHacks BostonBound, on the Bos(tons) of Eats and Streets track. SUBwayTREK is not
           affiliated with, endorsed by, or a partner of the MBTA or MassDOT, and it does not use their logos.
         </p>
         <p className="max-w-3xl leading-6">

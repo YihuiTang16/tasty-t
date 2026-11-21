@@ -20,6 +20,16 @@ export const STUDY_TRIP: TripPreferences = {
   stepFree: false,
 };
 
+export const LATE_NIGHT_TRIP: TripPreferences = {
+  campusId: "bu",
+  budget: "under-15",
+  cuisine: "any",
+  experience: "quick-bite",
+  time: "flexible",
+  stepFree: false,
+  lateNightOnly: true,
+};
+
 export const WEEKEND_TRIP: TripPreferences = {
   campusId: "harvard",
   budget: "under-15",
@@ -36,5 +46,5 @@ export function describeTrip(trip: TripPreferences, campusLabel: string): string
     optionLabel(CUISINE_OPTIONS, trip.cuisine),
     optionLabel(EXPERIENCE_OPTIONS, trip.experience),
     optionLabel(TIME_OPTIONS, trip.time),
-  ].join(" · ");
+  ].concat(trip.lateNightOnly ? ["Official-site-verified 24/7 spots"] : []).join(" · ");
 }

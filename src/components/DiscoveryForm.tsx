@@ -1,5 +1,5 @@
 import { RadioGroup } from "./RadioGroup.tsx";
-import { describeTrip, SAMPLE_TRIP, STUDY_TRIP, WEEKEND_TRIP } from "../lib/presets.ts";
+import { describeTrip, LATE_NIGHT_TRIP, SAMPLE_TRIP, STUDY_TRIP, WEEKEND_TRIP } from "../lib/presets.ts";
 import { BUDGET_OPTIONS, CUISINE_OPTIONS, EXPERIENCE_OPTIONS, TIME_OPTIONS } from "../lib/options.ts";
 import type { BudgetTier, Campus, CuisineChoice, ExperienceChoice, Station, TimeChoice, TripDraft, TripPreferences } from "../types.ts";
 
@@ -8,7 +8,7 @@ const FIELD_ERRORS: Record<string, string> = {
   budget: "Choose a budget.",
   cuisine: "Choose a cuisine.",
   experience: "Choose an experience.",
-  time: "Choose how much time you have.",
+  time: "Choose how far you want to explore.",
 };
 
 interface DiscoveryFormProps {
@@ -55,14 +55,50 @@ export function DiscoveryForm({
       }}
       noValidate
     >
-      <div className="mb-5 flex items-end justify-between gap-3">
-        <div>
-          <p className="text-xs font-semibold tracking-[0.16em] text-accent-dark uppercase">Plan a trip</p>
-          <h2 className="font-display text-3xl text-ink">Where are you starting?</h2>
+      <section aria-labelledby="quick-plans-heading" className="rounded-3xl border border-accent/35 bg-[#edf6f4] p-4 sm:p-5">
+        <div className="flex flex-wrap items-start justify-between gap-3">
+          <div>
+            <p className="text-xs font-semibold tracking-[0.16em] text-accent-dark uppercase">Start here · Option 1</p>
+            <h2 id="quick-plans-heading" className="mt-1 font-display text-3xl text-ink">Need an idea? Choose a Quick plan.</h2>
+            <p className="mt-1 text-sm text-muted">One click gives you a ready-made Boston outing.</p>
+          </div>
+          <span className="rounded-full bg-white/80 px-3 py-1 text-xs font-semibold text-accent-dark">Ready to go</span>
         </div>
+        <div className="mt-4 grid gap-3 sm:grid-cols-2 xl:grid-cols-4">
+          {[
+            { title: "BU food date", trip: SAMPLE_TRIP, campus: "Boston University" },
+            { title: "Study cafe", trip: STUDY_TRIP, campus: "Northeastern University" },
+            { title: "Free weekend outing", trip: WEEKEND_TRIP, campus: "Harvard University" },
+            { title: "Late-night bites", trip: LATE_NIGHT_TRIP, campus: "Boston University" },
+          ].map((preset) => (
+            <button
+              key={preset.title}
+              type="button"
+              onClick={() => onPreset(preset.trip)}
+              className="flex min-h-28 flex-col items-start rounded-2xl border border-line bg-white px-4 py-3 text-left transition hover:-translate-y-0.5 hover:border-accent hover:shadow-md focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-harbor"
+            >
+              <span className="block text-sm font-semibold">{preset.title}</span>
+              <span className="mt-1 block text-xs leading-5 text-muted">{describeTrip(preset.trip, preset.campus)}</span>
+              {preset.trip.lateNightOnly ? <span className="mt-1 block text-xs text-muted">Only listings verified as open 24/7</span> : null}
+              <span className="mt-auto pt-3 text-xs font-semibold text-accent-dark">Use this plan →</span>
+            </button>
+          ))}
+        </div>
+      </section>
+
+      <div className="flex items-center gap-3 py-1" aria-hidden="true">
+        <span className="h-px flex-1 bg-line" />
+        <span className="rounded-full border border-line bg-paper px-3 py-1 text-xs font-semibold tracking-wider text-muted">OR</span>
+        <span className="h-px flex-1 bg-line" />
       </div>
 
-      <div className="grid gap-5">
+      <section aria-labelledby="custom-filters-heading" className="rounded-3xl border border-line bg-paper/70 p-4 sm:p-5">
+        <div>
+          <p className="text-xs font-semibold tracking-[0.16em] text-harbor uppercase">Option 2 · Make it yours</p>
+          <h2 id="custom-filters-heading" className="mt-1 font-display text-3xl text-ink">Choose your own filters.</h2>
+          <p className="mt-1 text-sm text-muted">Set a starting point, then pick the budget and outing that fit you.</p>
+        </div>
+      <div className="mt-5 grid gap-x-5 gap-y-6 md:grid-cols-2 xl:grid-cols-3">
         <RadioGroup
           name="campus"
           label="Starting point"
@@ -75,7 +111,7 @@ export function DiscoveryForm({
         <RadioGroup
           name="budget"
           label="Budget"
-          hint="A price is used only when OpenStreetMap lists a fee or a simple charge. Otherwise it stays unknown."
+          hint="Price information can be missing. When OpenStreetMap has no listed fee or charge, we label it unknown and leave it out of budget scoring."
           value={draft.budget}
           options={BUDGET_OPTIONS}
           error={errorFor("budget")}
@@ -99,15 +135,15 @@ export function DiscoveryForm({
         />
         <RadioGroup
           name="time"
-          label="Time available"
-          hint="Time changes how far from your start a place can be. The distance is straight-line, not a ride time."
+          label="How far do you want to explore?"
+          hint="This changes how strongly distance from your campus station affects ranking. Distances are straight-line, not MBTA ride times."
           value={draft.time}
           options={TIME_OPTIONS}
           error={errorFor("time")}
           onChange={(time: TimeChoice) => onChange({ time })}
         />
 
-        <label className="flex items-start gap-3 rounded-2xl border border-line bg-paper px-3 py-3">
+        <label className="flex items-start gap-3 rounded-2xl border border-line bg-white px-3 py-3 md:col-span-2 xl:col-span-3">
           <input
             type="checkbox"
             className="mt-1 h-4 w-4 accent-harbor"
@@ -123,39 +159,17 @@ export function DiscoveryForm({
         </label>
       </div>
 
-      <div className="mt-6 flex flex-col gap-3 sm:flex-row">
+      </section>
+
+      <div className="mt-5 flex flex-col gap-3 sm:flex-row">
         <button
           type="submit"
           className="inline-flex min-h-12 items-center justify-center rounded-full bg-accent px-5 font-semibold text-white transition hover:bg-accent-dark"
         >
           {hasResults ? "Update places" : "Find places on the T"}
         </button>
-        <button
-          type="button"
-          onClick={() => onPreset(SAMPLE_TRIP)}
-          className="inline-flex min-h-12 flex-col items-start justify-center rounded-full border border-ink bg-ink px-5 py-2 text-left text-paper transition hover:bg-harbor"
-        >
-          <span className="font-semibold">Try a Sample Trip</span>
-          <span className="text-xs text-paper/75">{describeTrip(SAMPLE_TRIP, "Boston University")}</span>
-        </button>
       </div>
 
-      <div className="mt-4 grid gap-2 sm:grid-cols-2">
-        {[
-          { title: "Study cafe", trip: STUDY_TRIP, campus: "Northeastern University" },
-          { title: "Weekend from Harvard", trip: WEEKEND_TRIP, campus: "Harvard University" },
-        ].map((preset) => (
-          <button
-            key={preset.title}
-            type="button"
-            onClick={() => onPreset(preset.trip)}
-            className="rounded-2xl border border-line bg-paper px-3 py-2 text-left transition hover:border-ink/30"
-          >
-            <span className="block text-sm font-semibold">{preset.title}</span>
-            <span className="mt-1 block text-xs text-muted">{describeTrip(preset.trip, preset.campus)}</span>
-          </button>
-        ))}
-      </div>
     </form>
   );
 }

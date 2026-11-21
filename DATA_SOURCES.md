@@ -93,6 +93,17 @@ Opening hours are the raw `opening_hours` tag, or `opening_hours:kitchen` when t
 
 Website links are kept only when they are `http` or `https`. A bare domain from the source gets an `https://` prefix so the link works. Wikipedia links are built only from a `lang:Title` tag or an existing `wikipedia.org` URL.
 
+## Curated late-night listings
+
+The two records in `src/data/late-night.ts` are kept separate from the OpenStreetMap snapshot and are not counted among its 3,446 records.
+
+| Place | Official source for 24/7 hours | Checked |
+| --- | --- | --- |
+| South Street Diner | [Late-night page](https://www.southstreetdiner.com/late-night-eats.php) | November 21, 2026 |
+| Bova's Bakery | [FAQ](https://bovabakeryboston.net/faqs/) | November 21, 2026 |
+
+The app shows these only in the **Late-night bites** preset. Prices are unknown and are not scored. A 24/7 business does not mean that MBTA service is available at that hour; riders should check current transit directions.
+
 ## MBTA stations
 
 | | |
@@ -134,7 +145,7 @@ Google Maps links use `https://www.google.com/maps/dir/?api=1` with the campus s
 - Menu prices for restaurants. OpenStreetMap does not have them, and this project does not estimate them.
 - Silver Line and local bus stops.
 - Live vehicle locations, predictions, or alerts.
-- A claim that a place is open now.
+- A claim that an OpenStreetMap-listed place is open now. The two curated listings show hours from the business websites as checked on the date above; those hours can change.
 - MBTA or MassDOT logos, or any statement that this project is a partner of either agency.
 
 ## Attribution to keep visible

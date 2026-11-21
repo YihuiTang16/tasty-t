@@ -1,4 +1,5 @@
 import { MapErrorBoundary } from "./MapErrorBoundary.tsx";
+import { MiniOuting } from "./MiniOuting.tsx";
 import { MapPanel } from "./MapPanel.tsx";
 import { PlaceCard } from "./PlaceCard.tsx";
 import { optionLabel, BUDGET_OPTIONS, CUISINE_OPTIONS, EXPERIENCE_OPTIONS, TIME_OPTIONS } from "../lib/options.ts";
@@ -35,7 +36,7 @@ export function Results({
         <div className="rounded-[28px] border border-dashed border-line bg-card/70 px-5 py-10 text-center">
           <h2 className="font-display text-3xl">Your places will land here.</h2>
           <p className="mx-auto mt-2 max-w-xl text-muted">
-            Choose a campus station and a craving, or use Try a Sample Trip. The list and map stay in the page, using the saved dataset.
+            Choose a quick plan or set your campus, budget, and outing preferences. Your ranked places and map will appear here.
           </p>
         </div>
       ) : error ? (
@@ -59,17 +60,24 @@ export function Results({
               <p className="mt-1 text-sm text-muted">
                 {optionLabel(CUISINE_OPTIONS, submitted.cuisine)} · {optionLabel(BUDGET_OPTIONS, submitted.budget)} ·{" "}
                 {optionLabel(EXPERIENCE_OPTIONS, submitted.experience)} · {optionLabel(TIME_OPTIONS, submitted.time)}
+                {submitted.lateNightOnly ? " · Official-site verified 24/7 listings" : ""}
                 {submitted.stepFree ? " · Step-free preferred" : ""}
               </p>
             </div>
           </div>
 
           <p className="mb-4 max-w-3xl text-sm leading-6 text-muted">
-            {knownBudget === 0
-              ? "None of these places publish a price in OpenStreetMap, so budget was left out of the score instead of guessed."
-              : `${knownBudget} of ${results.length} places have a listed fee or charge. The others were ranked without a budget score.`}{" "}
-            Transit buttons open Google Maps. This app does not calculate ride times.
+            Scores show how well each place fits your selections; they are not reviews or star ratings.{" "}
+            {submitted.lateNightOnly
+              ? "Prices are not listed for these verified overnight spots, so budget was left out of the score instead of guessed."
+              : knownBudget === 0
+                ? "No prices or fees are listed for these places in OpenStreetMap, so budget was left out of the score instead of guessed."
+                : `${knownBudget} of ${results.length} places have a listed price or fee. For the others, budget was left out of the score instead of guessed.`}{" "}
+            Transit directions open Google Maps. Tasty T ranks by straight-line proximity and does not predict MBTA ride times.
+            {submitted.lateNightOnly ? " These businesses list 24/7 hours on their official websites; MBTA service may not be running at your overnight travel time, so check the transit directions before leaving." : ""}
           </p>
+
+          <MiniOuting results={results} />
 
           <div className="grid items-start gap-5 lg:grid-cols-[minmax(0,1fr)_minmax(320px,0.92fr)]">
             <div className="order-2 grid gap-4 lg:order-1">

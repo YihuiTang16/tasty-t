@@ -1,21 +1,22 @@
-# Tasty T
+# SUBwayTREK
 
 Explore Boston, one T stop at a time.
 
 The live site is [https://yihuitang16.github.io/tasty-t/](https://yihuitang16.github.io/tasty-t/).
 
-Tasty T helps Boston college students who do not have a car find food, cafes, museums, and parks they can reach by subway or light rail. You pick a campus station, a budget, a cuisine, an outing, and how much time you have. The app ranks real places and links out to Google Maps public transit directions.
+SUBwayTREK helps Boston college students who do not have a car find food, cafes, museums, and parks they can reach by subway or light rail. You pick a campus station, a budget, a cuisine, an outing, and how much time you have. The app ranks real places, suggests a nearby food-and-activity pairing when the results allow, and links out to Google Maps public transit directions.
 
 It is an independent student project for BostonHacks BostonBound 2026, on the Bos(tons) of Eats and Streets track. It is not affiliated with the MBTA or MassDOT.
 
 ## Try it
 
-The sample trip starts at Boston University, chooses Asian food, a date night, the $15–$25 budget, and two hours. **Try a Sample Trip** fills the form and ranks real places, including Thai and Chinese restaurants by the Green Line B and C branches.
+Choose **BU food date** to see a sample trip from Boston University with Asian food, a date night, a $15–$25 budget, and a two-hour exploration range. It ranks real places, including Thai and Chinese restaurants by the Green Line B and C branches.
 
-Two other presets are on the form:
+Other quick plans are on the form:
 
 - **Study cafe** starts at Northeastern University.
-- **Weekend from Harvard** starts at Harvard and prefers places OpenStreetMap lists as free.
+- **Free weekend outing** starts at Harvard and prefers places OpenStreetMap lists as free.
+- **Late-night bites** shows only South Street Diner and Bova's Bakery, whose official websites list 24/7 hours. Hours were checked November 21, 2026; verify them again before visiting. Prices stay unknown when no menu price is listed. MBTA service may not run at an overnight travel time, so check directions before leaving.
 
 ## Run it locally
 
@@ -28,7 +29,7 @@ npm run dev
 
 Open [http://localhost:4731](http://localhost:4731).
 
-The place and station files are already in `src/data`, so the app does not need an API key or a network connection to rank places. The map tiles load from the OpenStreetMap tile server when you are online.
+The OpenStreetMap place and MBTA station files are already in `src/data`, with two separately sourced late-night listings, so the app does not need an API key or a network connection to rank places. The map tiles load from the OpenStreetMap tile server when you are online.
 
 Other commands:
 

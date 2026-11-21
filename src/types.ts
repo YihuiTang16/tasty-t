@@ -61,7 +61,9 @@ export interface Place {
   wikipedia: string | null;
   wikidata: string | null;
   budget: BudgetInfo;
-  source: "OpenStreetMap";
+  source: "OpenStreetMap" | "Official business website";
+  lateNightVerified?: boolean;
+  openingHoursVerifiedAt?: string;
   sourceId: string;
   osmType: string;
   osmId: number;
@@ -107,6 +109,7 @@ export interface TripPreferences {
   experience: ExperienceChoice;
   time: TimeChoice;
   stepFree: boolean;
+  lateNightOnly?: boolean;
 }
 
 export interface TripDraft {
@@ -116,6 +119,7 @@ export interface TripDraft {
   experience: ExperienceChoice | null;
   time: TimeChoice | null;
   stepFree: boolean;
+  lateNightOnly: boolean;
 }
 
 export interface ScoreWeights {

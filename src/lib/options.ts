@@ -30,10 +30,10 @@ export const EXPERIENCE_OPTIONS: readonly ChoiceOption<ExperienceChoice>[] = [
 ];
 
 export const TIME_OPTIONS: readonly ChoiceOption<TimeChoice>[] = [
-  { value: "1h", label: "1 hour", description: "Prefers places closer to your start, measured in a straight line." },
-  { value: "2h", label: "2 hours" },
-  { value: "half-day", label: "Half day" },
-  { value: "flexible", label: "Flexible" },
+  { value: "1h", label: "Stay near campus", description: "Gives more weight to places close to your starting station." },
+  { value: "2h", label: "Explore nearby areas" },
+  { value: "half-day", label: "Explore the city" },
+  { value: "flexible", label: "Anywhere on the map" },
 ];
 
 export function optionLabel<T extends string>(options: readonly ChoiceOption<T>[], value: T): string {
