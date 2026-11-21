@@ -40,9 +40,9 @@ Click **Study cafe** in the quick plan cards.
 
 "Same engine, different ask. From Northeastern, one hour, coffee. Tatte is at the Northeastern station."
 
-If you still have two seconds, click **Weekend from Harvard**.
+If you still have two seconds, click **Late-night bites**.
 
-"Under $15, free museums move up, because OpenStreetMap says the fee is no. That is the only kind of budget we will claim."
+"These two listings show 24/7 hours on the businesses' official websites, checked November 21, 2026. Their prices remain unknown. Since the T may not be running overnight, the app reminds us to check directions."
 
 Stop. Do not open the score details unless someone asks.
 
@@ -54,7 +54,7 @@ Stop. Do not open the score details unless someone asks.
 
 ## What you are claiming
 
-- 3,446 places and 125 subway and light rail stations, retrieved November 21, 2026.
+- 3,446 OpenStreetMap places, two separate official-site-verified 24/7 listings, and 125 subway and light rail stations, retrieved or checked November 21, 2026.
 - A weighted score you can open on any card.
 - No accounts, no paid API, and no made-up prices or ride times.
 
