@@ -92,10 +92,10 @@ export function DiscoveryForm({
         <span className="h-px flex-1 bg-line" />
       </div>
 
-      <section aria-labelledby="custom-filters-heading" className="rounded-3xl border border-line bg-paper/70 p-4 sm:p-5">
+      <section aria-labelledby="custom-filters-heading" className="rounded-2xl border border-line bg-white p-4 sm:p-6">
         <div>
           <p className="text-xs font-semibold tracking-[0.16em] text-harbor uppercase">Option 2 · Make it yours</p>
-          <h2 id="custom-filters-heading" className="mt-1 font-display text-3xl text-ink">Choose your own filters.</h2>
+          <h2 id="custom-filters-heading" className="mt-1 font-display text-3xl text-ink">Preferences</h2>
           <p className="mt-1 text-sm text-muted">Set a starting point, then pick the budget and outing that fit you.</p>
         </div>
       <div className="mt-5 grid gap-x-5 gap-y-6 md:grid-cols-2 xl:grid-cols-3">
