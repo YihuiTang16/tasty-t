@@ -15,6 +15,7 @@ const EMPTY_DRAFT: TripDraft = {
   experience: null,
   time: null,
   stepFree: false,
+  lateNightOnly: false,
 };
 
 const LINE_ORDER = ["Red", "Orange", "Blue", "Green", "Mattapan"];
@@ -62,7 +63,7 @@ export default function App() {
   const origin = stations.find((station) => station.id === campus?.stationId) ?? null;
 
   function applyTrip(trip: TripPreferences) {
-    setDraft({ ...trip });
+    setDraft({ ...EMPTY_DRAFT, ...trip, lateNightOnly: trip.lateNightOnly ?? false });
     setFieldErrors([]);
     setPickedId(null);
     setFollowedId(null);
@@ -88,7 +89,7 @@ export default function App() {
       document.getElementById(`field-${missing[0]}`)?.focus();
       return;
     }
-    applyTrip({ campusId, budget, cuisine, experience, time, stepFree: draft.stepFree });
+    applyTrip({ campusId, budget, cuisine, experience, time, stepFree: draft.stepFree, lateNightOnly: draft.lateNightOnly });
   }
 
   function focusFromCard(id: string) {
