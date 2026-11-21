@@ -6,7 +6,6 @@ import { Results } from "./components/Results.tsx";
 import { campuses, meta, places, stations } from "./data/index.ts";
 import { scrollToId } from "./lib/format.ts";
 import { recommend } from "./lib/recommend.ts";
-import { SAMPLE_TRIP } from "./lib/presets.ts";
 import type { LineInfo, TripDraft, TripPreferences } from "./types.ts";
 
 const EMPTY_DRAFT: TripDraft = {
@@ -134,13 +133,12 @@ export default function App() {
             <a href="#how" className="hidden text-sm font-medium text-muted sm:inline">
               How ranking works
             </a>
-            <button
-              type="button"
-              onClick={() => applyTrip(SAMPLE_TRIP)}
-              className="min-h-11 rounded-full bg-ink px-4 text-sm font-semibold text-paper transition hover:bg-harbor"
+            <a
+              href="#plan"
+              className="inline-flex min-h-11 items-center rounded-full bg-ink px-4 text-sm font-semibold text-paper transition hover:bg-harbor"
             >
-              Try a Sample Trip
-            </button>
+              Plan a trip
+            </a>
           </div>
         </div>
       </header>
@@ -150,10 +148,10 @@ export default function App() {
           <div>
             <p className="text-xs font-semibold tracking-[0.18em] text-accent-dark uppercase">Boston, without a car</p>
             <h1 className="mt-3 max-w-xl font-display text-5xl leading-[0.95] text-ink sm:text-6xl">
-              Explore Boston, one T stop at a time.
+              Find your next bite. Take the T there.
             </h1>
             <p className="mt-4 max-w-xl text-lg leading-7 text-muted">
-              Food, cafes, museums, and parks for students who ride the subway and light rail. Start at a campus station and get a short list you can actually reach.
+              Choose your campus, budget, and kind of outing. Tasty T ranks Boston food and local spots around your preferences, then shows nearby MBTA stations and transit directions.
             </p>
             <dl className="mt-6 grid grid-cols-3 gap-3 max-w-lg">
               <div className="rounded-2xl bg-card px-3 py-3">
@@ -210,7 +208,7 @@ export default function App() {
             ))}
           </div>
           <p className="mt-3 max-w-3xl text-sm leading-6 text-muted">
-            Time changes how strongly distance from your start matters. It is not a predicted wait or ride. For Explore the city and Weekend adventure, parks without a Wikipedia or Wikidata link rank lower. The match number is this score, not a review.
+            Your exploration range changes how strongly proximity to your campus station affects the ranking. Distances are straight-line estimates, not ride times. For city and weekend outings, destination parks rank higher than small neighborhood parks. A match score reflects your preferences, not reviews.
           </p>
         </section>
 
