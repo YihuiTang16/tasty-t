@@ -1,4 +1,4 @@
-# Pitch: Tasty T
+# Pitch: SUBwayTREK
 
 About three minutes. Say it in your own voice. The beats below are the argument, not a script you have to memorize word for word.
 
@@ -12,7 +12,7 @@ College students in Boston and Cambridge who do not have a car. They are choosin
 
 ## Solution (about 40 seconds)
 
-Tasty T is a campus-to-table guide. You start at a real MBTA station: Boston University Central, Northeastern, Kendall/MIT, Harvard, or Park Street. You set a budget, a cuisine, the kind of outing, and how much time you have. The app ranks places from OpenStreetMap and explains the rank in plain language.
+SUBwayTREK is a campus-to-table guide. You start at a real MBTA station: Boston University Central, Northeastern, Kendall/MIT, Harvard, or Park Street. You set a budget, a cuisine, the kind of outing, and how much time you have. The app ranks places from OpenStreetMap and explains the rank in plain language.
 
 It does not invent the missing pieces. If OpenStreetMap has no price, the card says "Budget not listed" and the budget weight is dropped instead of filled in. Distances are straight-line miles, labeled as such. The transit button opens Google Maps with public transit selected. That is where live routing belongs. We do not pretend we calculated the ride.
 
