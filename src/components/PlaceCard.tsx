@@ -25,7 +25,11 @@ function accessLabel(wheelchair: Recommendation["station"]["wheelchair"]) {
 
 export function PlaceCard({ result, index, selected, originName, onViewMap }: PlaceCardProps) {
   const { place, station } = result;
-  const hoursLabel = place.openingHoursScope === "kitchen" ? "Kitchen hours on OpenStreetMap" : "Hours on OpenStreetMap";
+  const hoursLabel = place.openingHoursVerifiedAt
+    ? `Official business hours (checked ${place.openingHoursVerifiedAt})`
+    : place.openingHoursScope === "kitchen"
+      ? "Kitchen hours on OpenStreetMap"
+      : "Hours on OpenStreetMap";
 
   return (
     <article
@@ -131,7 +135,7 @@ export function PlaceCard({ result, index, selected, originName, onViewMap }: Pl
           <div>Experience {result.experienceScore.toFixed(2)} · weight {Math.round(result.weights.experience * 100)}%</div>
           <div>{place.budget.evidence}</div>
           <div>
-            OpenStreetMap {place.sourceId}. Station {station.name} ({station.id}), MBTA wheelchair boarding{" "}
+            {place.source === "OpenStreetMap" ? `OpenStreetMap ${place.sourceId}.` : `Official source: ${place.sourceId}.`} Station {station.name} ({station.id}), MBTA wheelchair boarding{" "}
             {station.wheelchairBoarding}.
           </div>
           <div>Distances are straight-line. They are not MBTA travel times.</div>
