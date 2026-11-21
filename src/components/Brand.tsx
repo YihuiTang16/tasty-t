@@ -4,7 +4,7 @@ export function Brand() {
       <svg aria-hidden="true" viewBox="0 0 48 48" className="h-10 w-10 shrink-0" role="img">
         <path d="M3 6h42M24 3v9M10 6l8 6m20-6-8 6" fill="none" stroke="#263E50" strokeWidth="1.6" strokeLinecap="round" />
         <path d="M17 12h14l4 5 4 22H9l4-22 4-5Z" fill="#168B8D" stroke="#142B3C" strokeWidth="1.5" strokeLinejoin="round" />
-        <path d="M19 14h10v4H19z" rx="1" fill="#142B3C" />
+        <rect x="19" y="14" width="10" height="4" rx="1" fill="#142B3C" />
         <text x="24" y="17" textAnchor="middle" fontFamily="Arial,sans-serif" fontSize="3.2" fontWeight="800" fill="#72DFC7">ST</text>
         <path d="M15 21c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v8H15v-8Z" fill="#142B3C" />
         <path d="M17 22h5v5h-5zm9 0h5v5h-5z" fill="#75C8D5" />
