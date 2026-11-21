@@ -8,7 +8,7 @@ const FIELD_ERRORS: Record<string, string> = {
   budget: "Choose a budget.",
   cuisine: "Choose a cuisine.",
   experience: "Choose an experience.",
-  time: "Choose how much time you have.",
+  time: "Choose how far you want to explore.",
 };
 
 interface DiscoveryFormProps {
@@ -58,8 +58,36 @@ export function DiscoveryForm({
       <div className="mb-5 flex items-end justify-between gap-3">
         <div>
           <p className="text-xs font-semibold tracking-[0.16em] text-accent-dark uppercase">Plan a trip</p>
-          <h2 className="font-display text-3xl text-ink">Where are you starting?</h2>
+          <h2 className="font-display text-3xl text-ink">Build your Boston outing</h2>
         </div>
+      </div>
+
+      <div className="mb-6">
+        <p className="text-xs font-semibold tracking-[0.16em] text-accent-dark uppercase">Quick plans</p>
+        <p className="mt-1 text-sm text-muted">Pick a starting point, then customize every detail below if you like.</p>
+        <div className="mt-3 grid gap-2 sm:grid-cols-3">
+          {[
+            { title: "BU food date", trip: SAMPLE_TRIP, campus: "Boston University" },
+            { title: "Study cafe", trip: STUDY_TRIP, campus: "Northeastern University" },
+            { title: "Free weekend outing", trip: WEEKEND_TRIP, campus: "Harvard University" },
+          ].map((preset) => (
+            <button
+              key={preset.title}
+              type="button"
+              onClick={() => onPreset(preset.trip)}
+              className="min-h-24 rounded-2xl border border-line bg-paper px-3 py-3 text-left transition hover:border-accent hover:bg-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-harbor"
+            >
+              <span className="block text-sm font-semibold">{preset.title}</span>
+              <span className="mt-1 block text-xs leading-5 text-muted">{describeTrip(preset.trip, preset.campus)}</span>
+              <span className="mt-2 block text-xs font-semibold text-accent-dark">Use this plan →</span>
+            </button>
+          ))}
+        </div>
+      </div>
+
+      <div className="mb-3 border-t border-line pt-5">
+        <p className="text-xs font-semibold tracking-[0.16em] text-accent-dark uppercase">Make it yours</p>
+        <p className="mt-1 text-sm text-muted">Customize your starting point and preferences.</p>
       </div>
 
       <div className="grid gap-5">
@@ -75,7 +103,7 @@ export function DiscoveryForm({
         <RadioGroup
           name="budget"
           label="Budget"
-          hint="A price is used only when OpenStreetMap lists a fee or a simple charge. Otherwise it stays unknown."
+          hint="Price information can be missing. When OpenStreetMap has no listed fee or charge, we label it unknown and leave it out of budget scoring."
           value={draft.budget}
           options={BUDGET_OPTIONS}
           error={errorFor("budget")}
@@ -99,8 +127,8 @@ export function DiscoveryForm({
         />
         <RadioGroup
           name="time"
-          label="Time available"
-          hint="Time changes how far from your start a place can be. The distance is straight-line, not a ride time."
+          label="How far do you want to explore?"
+          hint="This changes how strongly distance from your campus station affects ranking. Distances are straight-line, not MBTA ride times."
           value={draft.time}
           options={TIME_OPTIONS}
           error={errorFor("time")}
@@ -130,32 +158,8 @@ export function DiscoveryForm({
         >
           {hasResults ? "Update places" : "Find places on the T"}
         </button>
-        <button
-          type="button"
-          onClick={() => onPreset(SAMPLE_TRIP)}
-          className="inline-flex min-h-12 flex-col items-start justify-center rounded-full border border-ink bg-ink px-5 py-2 text-left text-paper transition hover:bg-harbor"
-        >
-          <span className="font-semibold">Try a Sample Trip</span>
-          <span className="text-xs text-paper/75">{describeTrip(SAMPLE_TRIP, "Boston University")}</span>
-        </button>
       </div>
 
-      <div className="mt-4 grid gap-2 sm:grid-cols-2">
-        {[
-          { title: "Study cafe", trip: STUDY_TRIP, campus: "Northeastern University" },
-          { title: "Weekend from Harvard", trip: WEEKEND_TRIP, campus: "Harvard University" },
-        ].map((preset) => (
-          <button
-            key={preset.title}
-            type="button"
-            onClick={() => onPreset(preset.trip)}
-            className="rounded-2xl border border-line bg-paper px-3 py-2 text-left transition hover:border-ink/30"
-          >
-            <span className="block text-sm font-semibold">{preset.title}</span>
-            <span className="mt-1 block text-xs text-muted">{describeTrip(preset.trip, preset.campus)}</span>
-          </button>
-        ))}
-      </div>
     </form>
   );
 }
